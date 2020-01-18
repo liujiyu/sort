@@ -3,12 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	arr := []int{1, 3, 2, 9, 4, 5}
+	arr := []int{1, 3, 3, 3, 3, 3, 3, 3, 3, 32, 9, 4, 5}
 	HeapSort(arr)
 	fmt.Println(arr)
 }
 
-//堆排序
+//堆排序 时间复杂度 Nlog(N) 不稳定
 func HeapSort(arr []int) {
 	count := len(arr)
 	if count <= 1 {
@@ -35,7 +35,7 @@ func adjustHeap(arr []int, index int) {
 	count := len(arr)
 	pos := index
 	for pos*2+2 < count {
-		if arr[index] > arr[index*2+1] && arr[index] > arr[index*2+2] {
+		if arr[index] >= arr[index*2+1] && arr[index] >= arr[index*2+2] {
 			break
 		}
 		if arr[index] < arr[index*2+1] {

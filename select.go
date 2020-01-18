@@ -8,7 +8,7 @@ func main() {
 	fmt.Println(arr)
 }
 
-//选择排序 时间复杂度:n^2 稳定
+//选择排序 时间复杂度:n^2 不稳定
 func SelectSort(arr []int) {
 	if len(arr) == 0 {
 		return

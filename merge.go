@@ -8,7 +8,7 @@ func main() {
 	fmt.Println(arr)
 }
 
-//归并排序
+//归并排序 时间复杂度 Nlog(N) 稳定
 func mergeSort(arr []int) []int {
 	count := len(arr)
 	if count <= 1 {

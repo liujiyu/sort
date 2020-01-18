@@ -19,7 +19,7 @@ func main() {
 	fmt.Println(arr)
 }
 
-//希尔排序
+//希尔排序 时间复杂度 nlog(n) 不稳定
 func ShellSort(arr []int, gap int) {
 	count := len(arr)
 	if count <= 1 {

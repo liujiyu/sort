@@ -8,7 +8,7 @@ func main() {
 	fmt.Println(arr)
 }
 
-//插入排序
+//插入排序 时间复杂度 N^2  稳定
 func InsertSort(arr []int) {
 	if len(arr) == 0 {
 		return
